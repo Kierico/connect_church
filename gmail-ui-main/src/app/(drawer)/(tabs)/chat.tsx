@@ -19,7 +19,7 @@ import { Avatar } from "@/components/avatar"
 import { MenuButton } from "@/components/menu-button"
 import { FloatButton } from "@/components/float-button"
 
-export default function Home() {
+export default function Chatting() {
   return (
     <View className="flex-1 bg-gray-900 pt-14 p-4">
       <Input>

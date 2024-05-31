@@ -26,7 +26,7 @@ export default function TabLayout() {
         name="index"
         options={{
           tabBarIcon: ({ size, color }) => (
-            <MaterialIcons name="home-work" size={size} color={color} />
+            <MaterialIcons name="home-filled" size={size} color={color} />
           ),
         }}
       />

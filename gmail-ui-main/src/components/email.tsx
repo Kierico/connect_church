@@ -14,15 +14,17 @@ export function Email({ data }: EmailProps) {
     <View className="w-full flex-row gap-4">
       <Avatar source={{ uri: data.avatar }} />
 
-      <View className="flex-1">
+      <View className="flex-1 bg-gray-800 w-full rounded-lg p-2">
         <View className="flex-row items-center gap-1">
-          <MaterialIcons
-            name="label-important"
-            size={16}
-            color={data.marker === "importante" ? colors.yellow[600] : colors.gray[400]}
-          />
+          {data.marker && (
+            <MaterialIcons
+              name="label-important"
+              size={16}
+              color={colors.yellow[600]/**data.marker === "importante" ? colors.yellow[600] : colors.gray[400]*/}
+            />
+          )}
 
-          <Text className="text-lg font-subtitle text-gray-400 flex-1">
+          <Text className="text-lg font-subtitle text-blue-400 flex-1">
             {data.name}
           </Text>
 
@@ -47,7 +49,7 @@ export function Email({ data }: EmailProps) {
           </Text>
 
           <MaterialIcons
-            name={data.start ? "star" : "star-outline"}
+            //name={data.start ? "star" : "star-outline"}
             size={22}
             color={data.start ? colors.blue[600] : colors.gray[400]}
           />
