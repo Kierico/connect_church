@@ -1,0 +1,68 @@
+export type PeopleDataProps = (typeof PEOPLES)[0]
+
+export const PEOPLES = [
+  {
+    id: "1",
+    name: "Andy",
+    avatar: "https://mighty.tools/mockmind-api/content/human/44.jpg",
+    ministry: "Pastora",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "2",
+    name: "John",
+    avatar: "https://mighty.tools/mockmind-api/content/human/65.jpg",
+    ministry: "Pastor",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "3",
+    name: "Felipe",
+    avatar: "https://mighty.tools/mockmind-api/content/human/75.jpg",
+    ministry: "Lider de Jovens",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "4",
+    name: "Daniel",
+    avatar: "https://mighty.tools/mockmind-api/content/human/57.jpg",
+    ministry: "Membro",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "5",
+    name: "Natan",
+    avatar: "https://mighty.tools/mockmind-api/content/human/25.jpg",
+    ministry: "Membro",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "6",
+    name: "Ugly",
+    avatar: "https://mighty.tools/mockmind-api/content/human/49.jpg",
+    ministry: "Lider de louvor",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "7",
+    name: "Fernanda",
+    avatar: "https://mighty.tools/mockmind-api/content/human/68.jpg",
+    ministry: "Membro",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+  {
+    id: "8",
+    name: "Rafaela",
+    avatar: "https://mighty.tools/mockmind-api/content/human/64.jpg",
+    ministry: "Membro",
+    address: "Rua asfaltada, n°10, Bairro.",
+    contact: "(92) 98899-7766    email@email.com",
+  },
+]

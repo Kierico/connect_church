@@ -3,7 +3,7 @@ import { Input } from "@/components/input"
 import { MenuButton } from "@/components/menu-button"
 import { colors } from "@/styles/colors"
 import { MaterialIcons } from "@expo/vector-icons"
-import { Image, Text, View } from "react-native"
+import { Text, View } from "react-native"
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
           <Input.Field placeholder="Pesquisar" />
           <Avatar source={{ uri: "https://github.com/kierico.png" }} />
         </Input>
-        <View className="flex-row justify-center items-center mt-6 mb-6">
-          <Text className="flex-1 text-gray-400 text-xl font-heading">
+        <View className="flex-row items-center mb-6">
+          <Text className="uppercase text-gray-400 text-sm font-subtitle mt-6">
             Aniversariantes
           </Text>
         </View>

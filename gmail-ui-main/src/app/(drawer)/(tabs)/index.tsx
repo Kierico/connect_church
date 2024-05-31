@@ -14,8 +14,8 @@ export default function Home() {
           <Input.Field placeholder="Pesquisar" />
           <Avatar source={{ uri: "https://github.com/kierico.png" }} />
         </Input>
-        <View className="flex-row justify-center items-center mt-6 mb-6">
-          <Text className="flex-1 text-gray-400 text-xl font-heading">
+        <View className="flex-row items-center mb-6 mt-6">
+          <Text className="flex-1 uppercase text-gray-400 text-sm font-subtitle">
             Igrejas
           </Text>
           <Text className="text-blue-500 text-sm font-heading">
@@ -30,14 +30,14 @@ export default function Home() {
           />
           <View className="absolute bottom-3 bg-orange-300 w-full h-20 pl-4 -mb-3">
             <Text className="text-gray-900 text-lg font-heading mt-2">Área 40 - Parq. Jerusalem 1</Text>
-            <View className="flex-row gap-8 mt-1 ">
+            <View className="flex-row gap-8 mt-1 items-center">
               <View className="flex-row gap-2 items-center">
                 <MaterialIcons name="calendar-today" size={18} color={colors.gray[900]} />
                 <Text className="text-gray-900 text-lg font-subtitle">1/4</Text>
               </View>
               <View className="flex-row gap-2 items-center">
-                <MaterialIcons name="music-note" size={18} color={colors.gray[900]} />
-                <Text className="text-gray-900 text-lg font-subtitle">33</Text>
+                <MaterialIcons name="messenger" size={18} color={colors.gray[900]} />
+                <Text className="text-gray-900 text-lg font-subtitle">3</Text>
               </View>
               <View className="flex-row gap-2 items-center">
                 <MaterialIcons name="person" size={18} color={colors.gray[900]} />
@@ -52,9 +52,9 @@ export default function Home() {
 
         {/** Reuniões */}
 
-        <View className="flex-col  mt-10 mb-6 border-t-2 border-gray-600 pt-4 w-full h-64 gap-4">
+        <View className="flex-col  mt-10 mb-6 border-t-2 border-gray-600 pt-6 w-full h-64 gap-4">
           <View className="flex-row items-center">
-            <Text className="flex-1 text-gray-400 text-xl font-heading ">
+            <Text className="flex-1 uppercase text-gray-400 text-sm font-subtitle pb-2">
               Reuniões
             </Text>
             <Text className="text-blue-500 text-sm font-heading">

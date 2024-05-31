@@ -1,25 +1,12 @@
-/**
-import { Text, View } from "react-native"
-
-export default function Chat() {
-  return (
-    <View className="flex-1 bg-gray-900 pt-14 p-4 items-center justify-center">
-      <Text className="text-white text-2xl font-heading">Chat</Text>
-    </View>
-  )
-}
-*/
-
 import { View, Text, FlatList } from "react-native"
 
-import { EMAILS } from "@/utils/emails"
 import { Input } from "@/components/input"
-import { Email } from "@/components/email"
+import { People } from "@/components/people"
+import { PEOPLES } from "@/utils/peoples"
 import { Avatar } from "@/components/avatar"
 import { MenuButton } from "@/components/menu-button"
-import { FloatButton } from "@/components/float-button"
 
-export default function Chatting() {
+export default function Peoples() {
   return (
     <View className="flex-1 bg-gray-900 pt-14 p-4">
       <Input>
@@ -29,18 +16,16 @@ export default function Chatting() {
       </Input>
 
       <FlatList
-        data={EMAILS}
+        data={PEOPLES}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <Email data={item} />}
+        renderItem={({ item }) => <People data={item} />}
         contentContainerClassName="gap-6"
         ListHeaderComponent={() => (
           <Text className="uppercase text-gray-400 text-sm font-subtitle mt-6">
-            Mensagens
+            Membros
           </Text>
         )}
       />
-
-      <FloatButton />
     </View>
   )
 }

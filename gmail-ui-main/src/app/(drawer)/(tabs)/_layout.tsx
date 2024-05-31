@@ -46,6 +46,14 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="people"
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <MaterialIcons name="people-alt" size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   )
 }

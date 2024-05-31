@@ -16,7 +16,7 @@ export function FloatButton({ icon = false, ...rest }: FloatButtonProps) {
     >
       <MaterialIcons name="send" size={22} color={colors.orange[500]} />
 
-      <Text className="font-subtitle text-orange-500">Enviar mensagem...</Text>
+      <Text className="font-subtitle" style={{color:'#9AA0A6'}}>Enviar mensagem...</Text>
     </TouchableOpacity>
   )
 }
